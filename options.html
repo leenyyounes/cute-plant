@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خيارات - Cute Plant</title>
+    <style>
+        /* أسلوب CSS بدرجات الوردي الفاتح */
+        body {
+            background-color: #ffe6f2; /* خلفية وردي فاتح */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .options-container {
+            text-align: center;
+            background-color: #fff0f5; /* خلفية وردي فاتح */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            animation: zoomIn 1s ease-in-out;
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        h1 {
+            color: #ff66b2; /* وردي متوسط */
+            font-size: 48px;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px #ff99cc;
+        }
+
+        .option-btn {
+            background-color: #ff66b2; /* وردي متوسط */
+            color: white;
+            padding: 15px 50px;
+            font-size: 24px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 15px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .option-btn:hover {
+            background-color: #ff4c99; /* وردي أغمق عند التمرير */
+            transform: scale(1.05);
+        }
+
+        /* زر "روادنا الخضراء" باللون الأخضر */
+        .green-btn {
+            background-color: #4caf50; /* أخضر */
+        }
+
+        .green-btn:hover {
+            background-color: #388e3c; /* أخضر غامق عند التمرير */
+        }
+
+        /* زر العودة إلى الرئيسية - لون وردي */
+        .back-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #ff66b2; /* وردي متوسط */
+            color: white;
+            font-size: 36px;
+            text-align: center;
+            line-height: 60px;
+            border-radius: 50%;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .back-btn:hover {
+            background-color: #ff4c99; /* وردي أغمق عند التمرير */
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="options-container">
+        <h1>🌺 الرجاء الاختيار 🌺</h1>
+        <button class="option-btn" onclick="window.location.href='indoor_plants.html'">🏠 النباتات المنزلية</button>
+        <button class="option-btn" onclick="window.location.href='garden_plants.html'">🍃 نباتات الحديقة</button>
+        <button class="option-btn" onclick="window.location.href='fertilizers.html'">🌱 أنواع الأسمدة</button>
+        <button class="option-btn" onclick="window.location.href='tools.html'">🪓 معدات الزراعة</button>
+        <button class="option-btn" onclick="window.location.href='weeds.html'">🌿 الأعشاب الضارة</button>
+        <button class="option-btn" onclick="window.location.href='agricultural_tips.html'">🌾 نصائح زراعية</button>
+
+    </div>
+
+    <!-- زر العودة إلى الصفحة الرئيسية -->
+    <a href="index.html" class="back-btn" title="العودة إلى الرئيسية">↩</a>
+
+</body>
+</html>

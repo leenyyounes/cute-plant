@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أنواع الأسمدة - Cute Plant</title>
+    <style>
+        body {
+            background-color: #ffe6f2;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            color: #ff99cc;
+            font-size: 48px;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 350px;
+            height: 400px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding-top: 20px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+            background-color: #f0e6f9;
+        }
+
+        .box img {
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .box:hover img {
+            transform: scale(1.1);
+        }
+
+        .back-btn {
+            background-color: #ffb3d9;
+            color: white;
+            padding: 15px 40px;
+            font-size: 22px;
+            border: none;
+            cursor: pointer;
+            border-radius: 30px;
+            margin-top: 50px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #ff80bf;
+        }
+
+        /* قسم النصائح الزراعية */
+        .tips {
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            margin-top: 50px;
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .tips h2 {
+            color: #ff99cc;
+            margin-bottom: 20px;
+        }
+
+        .tips p {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .tips p:before {
+            content: "💡 ";
+        }
+    </style>
+</head>
+<body>
+    <h1>🌱 أنواع الأسمدة</h1>
+    <div class="container">
+        <div class="box">
+            <img src="fertilizer1.jpg" alt="سماد 1">
+            <p>أحادي أمونيوم الفوسفاط: يعزز نمو الجذور.</p>
+        </div>
+        <div class="box">
+            <img src="fertilizer2.jpg" alt="سماد 2">
+            <p>ثنائي أمونيوم الفوسفاط: يساعد على تسريع النمو.</p>
+        </div>
+        <div class="box">
+            <img src="fertilizer3.jpg" alt="سماد 3">
+            <p>ثلاثي سوبر فوسفاط: يوفر كبريتًا ضروريًا للنباتات.</p>
+        </div>
+        <div class="box">
+            <img src="fertilizer4.jpg" alt="سماد 4">
+            <p>سماد نيتروجيني: يساعد على نمو الأوراق بسرعة.</p>
+        </div>
+        <div class="box">
+            <img src="fertilizer5.jpg" alt="سماد 5">
+            <p>سماد عضوي: يغذي التربة بشكل طبيعي.</p>
+        </div>
+        <div class="box">
+            <img src="fertilizer6.jpg" alt="سماد 6">
+            <p>سماد بوتاسيوم: يعزز مقاومة النباتات للجفاف.</p>
+        </div>
+    </div>
+
+    <!-- قسم النصائح الزراعية -->
+    <div class="tips">
+        <h2>🌱 نصائح زراعية</h2>
+        <p>استخدم السماد العضوي لزيادة خصوبة التربة بشكل طبيعي.</p>
+        <p>اختر السماد المناسب لنوع النبات الذي تزرعه لضمان أفضل نمو.</p>
+        <p>تأكد من توزيع السماد بشكل متساوٍ لضمان تغذية متكاملة للنباتات.</p>
+    </div>
+
+    <button class="back-btn" onclick="window.location.href='options.html'">🌷العودة</button>
+</body>
+</html>

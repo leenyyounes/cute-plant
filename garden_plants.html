@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نباتات الحديقة - Cute Plant</title>
+    <style>
+        body {
+            background-color: #ffe6f2;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            color: #ff99cc;
+            font-size: 48px;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 350px;
+            height: 400px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding-top: 20px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+            background-color: #f0e6f9;
+        }
+
+        .box img {
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .box:hover img {
+            transform: scale(1.1);
+        }
+
+        .back-btn {
+            background-color: #ffb3d9;
+            color: white;
+            padding: 15px 40px;
+            font-size: 22px;
+            border: none;
+            cursor: pointer;
+            border-radius: 30px;
+            margin-top: 50px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #ff80bf;
+        }
+
+        /* قسم النصائح الزراعية */
+        .tips {
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            margin-top: 50px;
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .tips h2 {
+            color: #ff99cc;
+            margin-bottom: 20px;
+        }
+
+        .tips p {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .tips p:before {
+            content: "💡 ";
+        }
+    </style>
+</head>
+<body>
+    <h1>🍃 نباتات الحديقة</h1>
+    <div class="container">
+        <div class="box">
+            <img src="garden1.jpg" alt="نبات حديقة 1">
+            <p>عباد الشمس 🌻: يحتاج إلى ضوء شمس مباشر لنمو سريع.</p>
+        </div>
+        <div class="box">
+            <img src="garden2.jpg" alt="نبات حديقة 2">
+            <p>الياسمين 🌼: يفضل المناطق المشمسة جزئيًا ويحتاج إلى تصريف جيد.</p>
+        </div>
+        <div class="box">
+            <img src="garden3.jpg" alt="نبات حديقة 3">
+            <p>الطماطم 🍅: تربة غنية بالمواد العضوية تضمن نموًا صحيًا.</p>
+        </div>
+        <div class="box">
+            <img src="garden4.jpg" alt="نبات حديقة 4">
+            <p>النعناع 🌿: نبات عطري ينمو بسهولة ويتحمل الحرارة.</p>
+        </div>
+        <div class="box">
+            <img src="garden5.jpeg" alt="نبات حديقة 5">
+            <p>الفلفل 🌶️: يزدهر في الأماكن المشمسة ويحتاج إلى سقاية منتظمة.</p>
+        </div>
+        <div class="box">
+            <img src="garden6.jpg" alt="نبات حديقة 6">
+            <p>البقدونس 🌱: نبات عشبي مفيد للمطبخ ويحتاج إلى ضوء الشمس الكامل.</p>
+        </div>
+    </div>
+
+    <!-- قسم النصائح الزراعية -->
+    <div class="tips">
+        <h2>🌱 نصائح زراعية</h2>
+        <p>تأكد من أن تربة الحديقة جيدة التصريف لمنع تعفن الجذور.</p>
+        <p>اختر نباتات تتحمل الحرارة لأفضل نتائج في الحدائق الخارجية.</p>
+        <p>قم بتقليم النباتات بانتظام لتشجيع النمو الصحي.</p>
+    </div>
+
+    <button class="back-btn" onclick="window.location.href='options.html'">🌷العودة</button>
+</body>
+</html>

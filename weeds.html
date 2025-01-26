@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأعشاب الضارة - Cute Plant</title>
+    <style>
+        body {
+            background-color: #ffe6f2;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            color: #ff99cc;
+            font-size: 48px;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap; /* يسمح بتغليف العناصر في صفوف متعددة */
+        }
+
+        .box {
+            width: 350px;
+            height: 400px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding-top: 20px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+            background-color: #f0e6f9;
+        }
+
+        .box img {
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .box:hover img {
+            transform: scale(1.1);
+        }
+
+        .back-btn {
+            background-color: #ffb3d9;
+            color: white;
+            padding: 15px 40px;
+            font-size: 22px;
+            border: none;
+            cursor: pointer;
+            border-radius: 30px;
+            margin-top: 50px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #ff80bf;
+        }
+
+        /* قسم النصائح الزراعية */
+        .tips {
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            margin-top: 50px;
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .tips h2 {
+            color: #ff99cc;
+            margin-bottom: 20px;
+        }
+
+        .tips p {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .tips p:before {
+            content: "💡 ";
+        }
+    </style>
+</head>
+<body>
+    <h1>🌿 الأعشاب الضارة</h1>
+    <div class="container">
+        <div class="box">
+            <img src="weed1.jpeg" alt="نبات السعد">
+            <p>نبات السعد 🌾: ينتشر بسرعة كبيرة ويتطلب اقتلاع الجذور بالكامل لمنع عودته</p>
+        </div>
+        <div class="box">
+            <img src="weed2.jpeg" alt="النجيل">
+            <p>النجيل 🌱: ينمو بسرعة في التربة الرطبة ويحتاج إلى مكافحة ميكانيكية أو كيميائية</p>
+        </div>
+        <div class="box">
+            <img src="weed3.jpeg" alt="الرجلة">
+            <p>الرجلة 🌿: تنتشر بسرعة ويمكن التحكم فيها بالتقليم المنتظم أو المبيدات</p>
+        </div>
+        <div class="box">
+            <img src="weed4.jpeg" alt="البلوط السام">
+            <p>البلوط السام 🍂: عشبة ضارة تسبب تهيج الجلد، يجب التعامل معها بحذر</p>
+        </div>
+        <div class="box">
+            <img src="weed5.jpg" alt="عشبة الزوان">
+            <p>عشبة الزوان 🌾: تنافس المحاصيل وتستهلك الماء بسرعة، يجب إزالتها بسرعة</p>
+        </div>
+        <div class="box">
+            <img src="weed6.jpg" alt="الهالوك">
+            <p>الهالوك 🌼: نبات طفيلي يضعف المحاصيل الزراعية، يجب مكافحته فور ظهوره</p>
+        </div>
+        <div class="box">
+            <img src="weed7.jpg" alt="عشبة السعدية">
+            <p>عشبة السعدية 🌱: صعبة السيطرة عليها، تحتاج إلى مبيدات خاصة لتقليل انتشارها</p>
+        </div>
+        <div class="box">
+            <img src="weed8.jpg" alt="الشوك">
+            <p>الشوك 🌿: عشبة ضارة شائكة، يجب اقتلاعها من الجذور لمنع نموها مجددًا</p>
+        </div>
+    </div>
+
+    <!-- قسم النصائح الزراعية -->
+    <div class="tips">
+        <h2>🌱 نصائح زراعية</h2>
+        <p>تفقد حديقتك بانتظام واقتلع الأعشاب الضارة فور ظهورها لمنع انتشارها</p>
+        <p>استخدم مواد عضوية لتغطية التربة وتقليل فرص نمو الأعشاب الضارة</p>
+        <p>اختر مبيدات الأعشاب بعناية لضمان عدم التأثير على النباتات المفيدة</p>
+    </div>
+
+    <button class="back-btn" onclick="window.location.href='options.html'">🌷العودة</button>
+</body>
+</html>

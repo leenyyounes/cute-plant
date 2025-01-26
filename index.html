@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Plant - الصفحة الرئيسية</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            background-image: url('55.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* تنسيق الشعار */
+        .logo {
+            width: 200px; 
+            margin-bottom: 30px;
+            animation: bounceIn 1.5s ease-in-out; /* إضافة تأثير دخول متحرك */
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 4rem;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .start-btn {
+            background-color: #ffb3d9;
+            color: white;
+            padding: 15px 40px;
+            font-size: 24px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* تأثير على الزر */
+            animation: slideInUp 1.5s ease;
+        }
+
+        .start-btn:hover {
+            background-color: #ff80bf;
+            transform: scale(1.1); /* تكبير الزر عند التمرير */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* إضافة ظل على الزر */
+        }
+
+        /* التأثيرات الحركية */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* تأثير ارتداد اللوجو */
+        @keyframes bounceIn {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        /* تأثير النصوص المتحركة */
+        .animated-text {
+            color: #ffffff;
+            font-size: 1.8rem;
+            text-align: center;
+            margin-top: 20px;
+            animation: moveText 3s infinite alternate;
+        }
+
+        @keyframes moveText {
+            0% {
+                transform: translateY(0px);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* تأثير Parallax */
+        .parallax {
+            background-image: url('plants-background.jpg');
+            min-height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -1;
+        }
+
+        /* قسم الأهداف المستقبلية */
+        .goals {
+            background-color: #ffffff;
+            padding: 50px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .goals h2 {
+            color: #ff99cc;
+            font-size: 36px;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .goal-item {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .goal-item.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* لجعل الأهداف تظهر عند التمرير */
+        @keyframes showGoal {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- الطبقة الشفافة والنصوص -->
+    <div class="overlay">
+        <!-- إضافة اللوجو مع تأثير التحريك -->
+        <img src="Leen4.png" alt="شعار Cute Plant" class="logo">
+        <h1>🌷Cute Plant🌷</h1>
+        <p class="animated-text">🌺🪴!اكتشف عالم النباتات المدهش مع أفضل النصائح</p>
+        <button class="start-btn" onclick="window.location.href='options.html'">ابدأ الآن</button>
+    </div>
+
+    <!-- تأثير Parallax -->
+    <div class="parallax"></div>
+
+    <!-- قسم الأهداف المستقبلية -->
+    <div class="goals">
+        <h2>🌺الأهداف المستقبلية🌺</h2>
+        <div class="goal-item"> 🌿اضافة اكثر من 1000 نبتة و المزيد من الخيارات و الادوات🌿</div>
+        <div class="goal-item"> 🌿تطوير الموقع الى تطبيق يفتح على جميع الاجهزة مجاناً🌿</div>
+        <div class="goal-item"> 🌿تطوير تطبيق ذكي للتعرف على النباتات ومساعدتك في العناية بها🌿</div>
+        <div class="goal-item"> 🌿تعزيز الشراكات مع مشاتل النباتات المحلية لتوفير خيارات أكثر🌿</div>
+    </div>
+
+    <script>
+        // دالة لعرض الأهداف عند التمرير
+        function revealGoals() {
+            const goals = document.querySelectorAll('.goal-item');
+            goals.forEach((goal) => {
+                const windowHeight = window.innerHeight;
+                const elementTop = goal.getBoundingClientRect().top;
+                const elementVisible = 100;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    goal.classList.add('show');
+                }
+            });
+        }
+
+        // استدعاء الدالة عند التمرير
+        window.addEventListener('scroll', revealGoals);
+    </script>
+
+</body>
+</html>
